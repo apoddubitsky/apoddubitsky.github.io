@@ -31,7 +31,7 @@ class List extends React.Component {
     });
 
     return (
-      <div className="col-md-4 offset-1">
+      <div className="col-lg-4 offset-1 col-sm-10">
         <ul className="list-group">{messages}</ul>
       </div>
     );

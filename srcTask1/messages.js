@@ -32,7 +32,7 @@ class Messages extends React.Component {
 
   render() {
     return (
-      <div className="col-md-4 offset-1">
+      <div className="col-lg-4 offset-1 col-sm-10">
         <form
           onSubmit={e => {
             e.preventDefault();
