@@ -1,0 +1,28 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: lightgrey;
+}
+nav ul li {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.hid {
+  display: none;
+}
+/* .list-group-item {
+  margin: 0;
+} */
+
+.mar {
+  margin-bottom: 10px;
+}
+.row {
+  margin-top: 20px;
+}
