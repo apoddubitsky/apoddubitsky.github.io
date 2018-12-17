@@ -8,6 +8,7 @@ class Messages extends React.Component {
   constructor(props) {
     super(props);
     this.flagForButton = true;
+    this.classAddButton = "btn btn-secondary btn-sm float-right";
     this.state = {
       inputText: ""
     };
@@ -18,9 +19,11 @@ class Messages extends React.Component {
     let text = e.target.value;
     this.setState({ inputText: text });
     if (text.trim()) {
+      this.classAddButton = "btn btn-primary btn-sm float-right";
       this.flagForButton = false;
     } else {
       this.flagForButton = true;
+      this.classAddButton = "btn btn-secondary btn-sm float-right";
     }
   }
 
@@ -52,7 +55,7 @@ class Messages extends React.Component {
             <button
               disabled={this.flagForButton}
               id="btnAddAppoint"
-              className="btn btn-primary btn-sm float-right"
+              className={this.classAddButton}
               onClick={() => {
                 this.newMessage(this.state.inputText);
               }}
