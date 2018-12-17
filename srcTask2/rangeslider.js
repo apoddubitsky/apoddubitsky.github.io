@@ -43,7 +43,7 @@ class RangeSlider extends React.Component {
   render() {
     return (
       <div className="row">
-        <div className="col-md-6">
+        <div className="col-lg-6 col-sm-12">
           <div className="slidecontainer">
             <div className="text-center">
               <h4>
@@ -67,7 +67,7 @@ class RangeSlider extends React.Component {
           <span>100</span>
           <span className="float-right">5000</span>
         </div>
-        <div className="col-md-6 text-center">
+        <div className="col-lg-6 col-sm-12 text-center">
           <h3>Counter:</h3>
           <span ref="id" />
           <span>ms</span>

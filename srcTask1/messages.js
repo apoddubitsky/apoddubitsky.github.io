@@ -7,6 +7,7 @@ import { bindActionCreators } from "redux";
 class Messages extends React.Component {
   constructor(props) {
     super(props);
+    this.flagForButton = true;
     this.state = {
       inputText: ""
     };
@@ -16,11 +17,17 @@ class Messages extends React.Component {
   getText(e) {
     let text = e.target.value;
     this.setState({ inputText: text });
+    if (text) {
+      this.flagForButton = false;
+    } else {
+      this.flagForButton = true;
+    }
   }
 
   newMessage(message) {
     this.props.addNewMessage(message);
     this.setState({ inputText: "" });
+    this.flagForButton = true;
   }
 
   render() {
@@ -43,6 +50,7 @@ class Messages extends React.Component {
         <div className="form-group row">
           <label className="col-sm-12  col-form-label-sm">
             <button
+              disabled={this.flagForButton}
               id="btnAddAppoint"
               className="btn btn-primary btn-sm float-right"
               onClick={() => {
