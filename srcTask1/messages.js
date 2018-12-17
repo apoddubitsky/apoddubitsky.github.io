@@ -15,9 +15,9 @@ class Messages extends React.Component {
     this.newMessage = this.newMessage.bind(this);
   }
   getText(e) {
-    let text = e.target.value.trim();
+    let text = e.target.value;
     this.setState({ inputText: text });
-    if (text) {
+    if (text.trim()) {
       this.flagForButton = false;
     } else {
       this.flagForButton = true;
