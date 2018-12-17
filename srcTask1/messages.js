@@ -31,6 +31,7 @@ class Messages extends React.Component {
     this.props.addNewMessage(message);
     this.setState({ inputText: "" });
     this.flagForButton = true;
+    this.classAddButton = "btn btn-secondary btn-sm float-right";
   }
 
   render() {
