@@ -23,7 +23,7 @@ export default class Main extends React.Component {
                 </li>
                 <li>
                   <a href="https://pixelplex.io" target="blank">
-                    pixelplex
+                    Pixelplex link
                   </a>
                 </li>
               </ul>
